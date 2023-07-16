@@ -121,7 +121,78 @@ nav a {
 /* feature-2 section */
 
 .faature-container2 {
+  max-width: 90vw;
   display: flex;
+  margin: 0 auto;
+  gap: 120px;
+}
+.faature-container2 h3 {
+  border-left: 5px solid #ff900e;
+  padding-left: 21px;
+}
+.faature-container2 .description {
+  margin: 24px 0 30px 0;
+}
+.smallContent {
+  padding: 20px 10px 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.smallContent .content-tittle {
+  color: #131313;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.imageAndOthers {
+  margin: 0 auto;
+}
+.imageAndOthers .image-content {
+  width: 40%;
+  color: white;
+  background-color: #ff900e;
+  padding-right: 200px;
+  padding: 50px 40px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  top: -104px;
+  left: -80px;
+}
+.imageAndOthers .image-content .image-content-1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.imageAndOthers .image-content .image-content-3 {
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+/* some facts section */
+.some-fact {
+  /* border: 2px solid black; */
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+.someFactContant {
+  margin-bottom: 30px;
+}
+.cardContainer {
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  justify-content: space-around;
+  /* border: 2px solid black; */
+}
+.card {
+  width: 241.831px;
+  margin-top: 50px;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  padding: 40px;
+  text-align: center;
 }
 
 /* responsive for small device */
@@ -149,6 +220,36 @@ nav a {
   .team-iamge {
     grid-template-columns: 1fr;
   }
+  .faature-container2 {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .imageAndOthers {
+    margin: 0;
+  }
+  .imageAndOthers img {
+    width: 100%;
+    height: 100%;
+  }
+  .imageAndOthers .image-content {
+    width: 60%;
+    left: 9%;
+  }
+  .some-fact {
+    text-align: center;
+  }
+  .cardContainer {
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 200px;
+    margin-top: 5px;
+    padding: 30px;
+  }
 }
 
 /* responsive for medium devices */
@@ -172,5 +273,18 @@ nav a {
   }
   .feature-container img {
     width: 100%;
+  }
+  .faature-container2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .imageAndOthers .image-content {
+    left: 22%;
+  }
+  .cardContainer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
   }
 }
